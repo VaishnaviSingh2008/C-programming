@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float Principal,Rate,Time,Amount,SimpleInterest,CompoundInterest;
+
+    printf("Enter the principal =");
+    scanf("%f" ,&Principal);
+    
+    printf("Enter the rate =");
+    scanf("%f" ,&Rate);
+    
+    printf("Enter the time =");
+    scanf("%f" ,&Time);
+    
+    SimpleInterest = (Principal*Rate*Time)/100;
+    Amount = Principal*pow(1+ Rate /100,Time);
+    CompoundInterest = Amount-Principal;
+    
+    printf("The simple interest is =%.2f\n",SimpleInterest);
+    printf("The compound interest is =%.2f\n",CompoundInterest);
+
+    return 0;
+}
