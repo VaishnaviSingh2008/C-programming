@@ -5,7 +5,7 @@ int main() {
     printf("Enter the temperature in centigrade = ");
     scanf("%f",&c);
 
-    f=(c*(9/5))+32;
+    f=(c*9/5)+32;
     printf("The temperature in fahrenheit = %.2f",f);
 
     
