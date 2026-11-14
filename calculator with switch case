@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+  int a,b;
+    char operation;
+    printf("enter the number1=");
+    scanf("%d",&a);
+    printf("enter the number2=");
+    scanf("%d",&b);
+    printf("pick the operation to be performed(/,*,+,-)=");
+    scanf(" %c",&operation);
+
+    switch(operation){
+    case'-':
+         printf("answer =%d",a-b);
+    break;
+    case'+':
+        printf("answer =%d",a+b);
+    break;
+    case'*':
+        printf("answer =%d",a*b);
+    break;
+    case'/':
+        if(b!=0)
+        printf("answer =%d",a/b);
+        else 
+        printf("by zero not possible");
+    break; 
+    default:
+    printf("not operatable");
+    }
+
+    
+ 
+    return 0;
+}
